@@ -1,0 +1,358 @@
+/*Stylesheet for tasmaster app*/
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+.background{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  opacity : 0.9;
+}
+.app-header {
+  background-color:darkslategrey;
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  text-align: center;
+    border-radius: 8px;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.app-header p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+/* Style the app container and center it on the page */
+.app-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.main-card{
+    background-color:lightgoldenrodyellow;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.task-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    
+}
+.tasks-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+.app-footer{
+    
+    text-align: center;
+ margin-top: 25px;
+ color: white;
+ font-size: 14px;
+ text-decoration : underline;
+}
+h1, h2, h3 {
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+h1{
+  color:#FFFDD0;
+}
+h2,h3{
+  color:#36454F;
+  font-size: 1.5em;
+  padding:10px;
+  text-decoration :underline;
+}
+h2{
+  margin-bottom: 15px;
+}
+
+.section-title{
+    font-size : 1.8em;
+    margin: 15px;
+    font-weight : bold;
+    text-decoration : none;
+}
+.form-group{
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bolder;
+    
+}
+.form-group input,
+.form-group select{
+  width: 100%;
+  padding:8px 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+.form-actions button{
+    padding: 10px;
+    background-color:#45a049;
+    color: white;
+    border: solid 2px grey;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    margin-bottom : 20px;
+}
+.form-actions button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+#form-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+[role="tablist"]{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap:10px;
+}
+
+.filter-btn[aria-selected="true"] {
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    width: 100%;
+}
+.filter-btn[role="tab"]:focus {
+    outline: 2px solid #2196F3;
+}
+.section-header{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+#task-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Style the tasks summary with proper alignment and spacing */
+.task-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+#clear-completed-btn {
+    padding: 10px 20px;
+    background-color:#45a049;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#clear-completed-btn:hover {
+    background-color: #45a049;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    flex-direction:row;
+}
+.task-item-high{
+    background-color: #ffcccc;
+    border: darkred 2px solid;
+}
+.task-item-medium{
+    background-color: #fff5cc;
+    border: darkorange 2px solid;
+}
+.task-item-low{
+    background-color: #ccffcc;
+    border: darkgreen 2px solid;
+}
+.task-checkbox{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.task-content {
+    flex-grow: 1;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+.task-text{
+    font-weight: 500;
+    color: #333;
+    padding: 12px;
+    font-size: 1.2em;
+}
+.task-details {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+.delete-btn {
+    padding: 5px 10px;
+    background-color: salmon;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.delete-btn:hover {
+    background-color: #ff1a1a;
+    text-decoration :underline;
+    transform: scale(1.05);
+}
+.task-completed{
+    text-decoration: line-through;
+    color: #999;
+}
+/* Create responsive layout for task summary on mobile */
+@media (max-width: 600px) {
+    .task-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .task-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .task-content {
+        text-align: center;
+    }
+    .section-header{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+}
+/* Create responsive layout for task summary on mobile */
+@media (max-width: 600px) {
+    .app-container {
+        padding: 10px;
+    }
+    .task-form-container, .tasks-container {
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .task-summary, .task-item {
+        width: 100%;
+    }
+    .filter-button[role="tab"] {
+        width: 100%;
+    }
+}
+/* Optimize touch targets for mobile filter buttons */
+@media (max-width: 600px) {
+    .filter-button[role="tab"] {
+        padding: 12px 20px;
+        font-size: 1.2em;
+    }
+    .task-item, .task-summary {
+        padding: 15px;
+    }
+    .delete-btn {
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+}
+/* Optimize touch targets for mobile checkboxes */
+@media (max-width: 600px) {
+    .task-checkbox {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .task-text {
+        font-size: 1.2em;
+    }
+}
+/* Optimize touch targets for mobile buttons */
+@media (max-width: 600px) {
+    .form-actions button, #clear-completed-btn {
+        padding: 10px 12px;
+        font-size: 1.2em;
+    }
+    .delete-btn {
+        padding: 10px 10px;
+        font-size: 1em;
+    }
+}
+.filter-btn{
+    padding: 10px 20px;
+    background-color: #7a7a7a;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+    width: 100%;
+}
+.filter-btn:hover {
+    background-color: #5a5a5a;
+    transform: scale(1.05);
+}
