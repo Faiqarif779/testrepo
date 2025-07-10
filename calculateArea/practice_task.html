@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice task</title>
+</head>
+<body>
+    <h1>Grocery Amount Calculation</h1>
+    <label for = "Amount">Enter grocery1 amount</label>
+    <input type = "number" id= "grocery1"><br><br>
+    <label for = "Amount">Enter grocery2 amount</label>
+    <input type = "number" id= "grocery2"><br><br>
+    <label for = "Amount">Enter grocery3 amount</label>
+    <input type = "number" id= "grocery3"><br><br>
+    <button onclick="totalAmount(
+        parseFloat(document.getElementById('grocery1').value) || 0,
+        parseFloat(document.getElementById('grocery2').value) || 0,
+        parseFloat(document.getElementById('grocery3').value)|| 0
+        )">Calculate total Amount</button>
+    <p id="result"></p>
+
+    <script src="practice_task.js"></script>
+</body>
+</html>
