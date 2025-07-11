@@ -11,6 +11,7 @@ const job = document.getElementById('job').value;
 const designation = document.getElementById('designation').value;
 const productType = document.getElementById('productType').value;
 const feedback = document.getElementById('feedbackText').value;
+const prodExp = document.getElementById('userExperience').value;
 
 
     document.getElementById('userName').innerHTML = username;
@@ -20,6 +21,8 @@ const feedback = document.getElementById('feedbackText').value;
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('userProductType').innerHTML = productType;
+    document.getElementById('userProductExperience').innerHTML = prodExp;
 
     document.getElementById('userInfo').style.display = 'block';
 }
