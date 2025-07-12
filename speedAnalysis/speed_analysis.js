@@ -39,6 +39,7 @@ button.onclick = endTest;
             // Display the results
             var outputDiv = document.getElementById("output");
             outputDiv.innerHTML = "<h2>Typing Test Results:</h2>" +
+                "<p>Total Length : " + findlength() + "</p>" +
                 "<p>Words Typed: " + typedWords + "</p>" +
                 "<p>Time Elapsed: " + timeElapsed.toFixed(2) + " seconds</p>" +
                 "<p>Words Per Minute (WPM): " + wpm + "</p>";
@@ -47,4 +48,9 @@ button.onclick = endTest;
             var button = document.getElementById("btn");
             button.innerHTML = "Start Test";
             button.onclick = startTest;
+        }
+
+        function findlength(){
+            const input =  document.getElementById("userInput").value;
+            return input.length;
         }
