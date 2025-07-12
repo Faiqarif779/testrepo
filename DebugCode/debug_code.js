@@ -1,4 +1,4 @@
-    
+ 
     function performOperation() {
     // Get user input from input fields
     let num1 = parseInt(document.getElementById('input1').value);
@@ -6,7 +6,7 @@
     // Check if inputs are valid numbers
     if (!isNaN(num1) && !isNaN(num2)) {
     // Perform the operation
-                    let result = multiply(num1, num2);
+                    let result = DoAll(num1, num2);
 
                     // Display the result
                     displayResult(result);
@@ -14,18 +14,29 @@
                     displayResult('Please enter valid numbers');
                 }
             }
+             let mult;
+             let add;
+             let sub;
+             let div;
 
-            function multiply(a, b) {
-                // Introduce a debugger statement to pause execution
-                debugger;
+            function DoAll(a,b){
+               debugger;
 
-                // Multiply the numbers
-                return a * b;
+                mult= a*b;
+                add = a+b;
+                sub = a-b;
+                div = a/b;
+
+               
+                
             }
 
             function displayResult(result) {
                 // Display the result in the paragraph element
                 const resultElement = document.getElementById('result');
-                resultElement.textContent = `The result is: ${result}`;
+                resultElement.innerHTML= `<p><strong>Multiplication</strong> : ${mult}</p>
+                <p><strong>Addition</strong> : ${add}</p>
+                <p><strong>Subtraction</strong> : ${sub}</p>
+                <p><strong>Division</strong> : ${div}</p>`;
             }
         
