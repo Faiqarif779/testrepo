@@ -1,0 +1,36 @@
+{
+  "articles": [
+    {
+      "title": "Tech Giants Face New Regulations",
+      "author": "Sarah Khan",
+      "date": "2025-07-12",
+      "description": "Governments around the world are introducing new laws to regulate big tech companies, focusing on data privacy and monopoly practices.",
+      "content": "Several countries are enforcing new regulations aimed at curbing the power of tech giants like Google, Meta, and Amazon. These include stricter data collection rules and fines for anti-competitive behavior.",
+      "category": "Technology"
+    },
+    {
+      "title": "Pakistan Advances in Clean Energy Sector",
+      "author": "Ahmed Tariq",
+      "date": "2025-07-10",
+      "description": "Pakistan has launched multiple solar and wind power projects aimed at reducing reliance on fossil fuels.",
+      "content": "The Ministry of Energy reports that over 2,000 MW of renewable energy projects have been initiated. These are expected to reduce carbon emissions significantly by 2030.",
+      "category": "Environment"
+    },
+    {
+      "title": "Record Rainfall Hits Karachi",
+      "author": "Mariam Jamil",
+      "date": "2025-07-09",
+      "description": "Heavy monsoon rains have caused major flooding in several parts of Karachi, disrupting transportation and power supply.",
+      "content": "According to the Met Office, Karachi received over 150mm of rain in 24 hours, the highest in a decade. Authorities are working to clear water from main roads.",
+      "category": "Weather"
+    },
+    {
+      "title": "AI Takes Center Stage at Global Tech Summit",
+      "author": "Ali Raza",
+      "date": "2025-07-08",
+      "description": "Artificial Intelligence was the most discussed topic at this year’s Global Tech Summit, highlighting its impact on industries from healthcare to finance.",
+      "content": "Speakers emphasized responsible AI development, job automation, and ethical considerations in deploying machine learning models in real-world settings.",
+      "category": "Technology"
+    }
+  ]
+}
