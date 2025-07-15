@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-image: url('download.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: brown;
+    color :white;
+}
+header {
+  display: flex;
+  justify-content: space-between; /* spread items across */
+  align-items: center;
+  padding: 5px 10px;
+  background-color: Black;
+  color : white;
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.tabs a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+.tabs a:hover{
+    text-decoration: underline;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 15px;
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  max-width: 100%;
+
+}
+
+#searchInput {
+  padding: 10px 20px;
+  border : none;
+}
+#searchInput:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+#searchButton {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: navy;
+  color :white;
+  border : none;
+  border-radius: 4px;
+}
+
+#main_page{
+    margin: 0px;
+    
+}
+h1{
+    
+   font-size: 3.5em;
+   line-height: 1.1;
+   
+   font-weight:bolder;
+}
+#homeText{
+    max-width: 25%;
+    font-size :0.9em;
+    margin-top:35px;
+    color:white;
+    font-weight:600;
+}
+#bookNowButton{
+    margin-top:40px;
+    background-color:darkslategrey;
+    color : white;
+    padding :10px 20px;
+    border-radius: 4px;
+    border:none;
+    margin-bottom:0px;
+}
+#bookNowButton:hover {
+    background-color: teal; /* or any lighter/different shade */
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05); /* slight zoom effect */
+    transition: all 0.3s ease;
+}
+
+.social-icons{
+text-align: center;
+padding-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  color: blueviolet;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+  max-width: 100%;
+  
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Changes color on hover */
+}
+
+
+.tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }

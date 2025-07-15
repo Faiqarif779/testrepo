@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bloom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+        <p>✈️ TravelBloom</p>
+    </div>
+        <div class="header-center">
+            <nav>
+                <ul class="tabs">
+                    <li><a href="#home" class="tab active" data-tab="home">Home</a></li>
+                    <li><a href="#about" class="tab" data-tab="about">About Us</a></li>
+                    <li><a href="#contact" class="tab" data-tab="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-right">
+        <input type="text" id="searchInput" placeholder="Enter a destination">
+        <button id="searchButton">🔍 Search</button>
+        </div>
+    </header>
+
+    <main class="background">
+        <div id ="home"class="tab-content active">
+        <div id="main_page">
+            <h1>EXPLORE<br>DREAM<br>DESTINATION<br></h1>
+            <p id="homeText">It encourages Exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+            <button id="bookNowButton">Book Now</button>
+        </div>
+         <div class="social-icons">
+  <a href="https://www.facebook.com/share/16AJQwX7ao/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://wa.me/03115373257" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/faiqarif9" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://twitter.com/YourUsername" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+        </div>
+
+        <div id="about" class="tab-content">
+            <h2>About Us</h2>
+            <p>Welcome to Our Company! We are a team of passionate individuals dedicated to provide excellent services to our customers. Our mission is to<strong> provide best experience</strong> for people traveling to different destinations around the world.<br>Our values include integrity, innovation, customer satisfications and teamwork. We believe in putting <strong>our customers first</strong> and <strong>working together</strong> to achieve our goals.<br>Feel free to explore our website to learn more about we offer!</p>
+            <h2>Our Team</h2>
+            <div id="team">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>John is responsible for....</p>
+                    <button>CEO</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Jane is responsible for....</p>
+                    <button>Team Lead</button>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3">
+                    <h3>Emily Johnson</h3>
+                    <p>Emily is responsible for....</p>
+                    <button>Delivery Head</button>
+                </div>
+        </div>
+        <h2>Company History</h2>
+        <p>TravelBloom began its journey in 2012 with a simple mission: to make the world more accessible to curious minds. What started as a two-person team organizing backpacking trips across South Asia has now grown into a global travel company helping thousands explore the hidden corners of the earth. Built on a passion for cultural exchange, adventure, and responsible tourism, WanderSphere has partnered with local guides and communities in over 50 countries. Over the past decade, the company has expanded its services from group tours to customized solo adventures, digital nomad experiences, and eco-travel packages — all while maintaining its commitment to safety, sustainability, and unforgettable memories.</p>
+        <h2>Our Locations</h2>
+        <image src="https://via.placeholder.com/600x300" alt="Map of Locations">
+            <image src="https://via.placeholder.com/600x300" alt="Map of Locations">
+        <p>We operate in over 50 countries worldwide, offering a wide range of travel experiences from cultural immersions in Asia to adventure treks in South America. Our local partners ensure that every journey is authentic and enriching.</p>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+            <div id="feedback Form">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email"><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" cols="100"></textarea><br>
+                <button id="submitFeedback">Submit</button>
+            </div>
+        </div>
+    </main>
+    <script src="travel.js"></script>
+</body>
+</html>
