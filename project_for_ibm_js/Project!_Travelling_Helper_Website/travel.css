@@ -3,17 +3,10 @@
     margin: 0;
     padding: 0;
 }
-.background{
-    background-image: url('download.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px;
-}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: brown;
-    color :white;
 }
 header {
   display: flex;
@@ -78,15 +71,29 @@ header {
   border-radius: 4px;
 }
 
+#home{
+    background-image: url('download.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+  justify-content: space-between; /* spread items across */
+  align-items: center;
+  padding:0px;
+  height:100vh;
+  
+}
+
 #main_page{
-    margin: 0px;
+    padding-left: 150px;
+    padding-top: 140px;
     
 }
 h1{
     
    font-size: 3.5em;
    line-height: 1.1;
-   
+   color:white;
    font-weight:bolder;
 }
 #homeText{
@@ -103,7 +110,7 @@ h1{
     padding :10px 20px;
     border-radius: 4px;
     border:none;
-    margin-bottom:0px;
+    margin-bottom:25px;
 }
 #bookNowButton:hover {
     background-color: teal; /* or any lighter/different shade */
@@ -112,30 +119,42 @@ h1{
     transform: scale(1.05); /* slight zoom effect */
     transition: all 0.3s ease;
 }
-
 .social-icons{
-text-align: center;
-padding-top: 30px;
+    display:flex;
+    flex-direction: column;
+    padding-top: 30px;
+    justify-content: center;;
+    border-right: 2px solid black;
+
 }
 .social-icons a {
   text-decoration: none;
-  color: blueviolet;
+  color: white;
   margin: 0 10px;
   font-size: 24px;
   transition: color 0.3s;
   max-width: 100%;
   
 }
-
 .social-icons a:hover {
   color: #007bff; /* Changes color on hover */
 }
+#about{
+    padding:0px;
+}
+
+h2{
+    font-weight : bold;
+    font-size:3em;
+    margin-top:0px;
+}
+
 
 
 .tab-content {
-      display: none;
+      display: none ;
     }
     
     .tab-content.active {
-      display: block;
+      display: block ;
     }
